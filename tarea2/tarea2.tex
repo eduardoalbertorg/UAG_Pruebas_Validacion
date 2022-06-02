@@ -1,0 +1,78 @@
+% PLANTILLA APA7
+% Creado por: Isaac Palma Medina
+% Última actualización: 25/07/2021
+% @COPYLEFT
+
+% Fuentes consultadas (todos los derechos reservados):  
+% Normas APA. (2019). Guía Normas APA. https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf
+% Tecnológico de Costa Rica [Richmond]. (2020, 16 abril). LaTeX desde cero con Overleaf (1 de 3) [Vídeo]. YouTube. https://www.youtube.com/watch?v=kM1KvHVuaTY Weiss, D. (2021). 
+% Formatting documents in APA style (7th Edition) with the apa7 LATEX class. https://ctan.math.washington.edu/tex-archive/macros/latex/contrib/apa7/apa7.pdf @COPYLEFT
+
+%+-+-+-+-++-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+
+
+% Preámbulo
+\documentclass[stu, 12pt, letterpaper, donotrepeattitle, floatsintext, natbib]{apa7}
+\usepackage[utf8]{inputenc}
+\usepackage{comment}
+\usepackage{marvosym}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[normalem]{ulem}
+\usepackage[spanish]{babel} 
+\selectlanguage{spanish}
+\useunder{\uline}{\ul}{}
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+
+% Portada
+\thispagestyle{empty}
+\title{\Large Tarea 2}
+\author{Rodríguez García Eduardo Alberto} % (autores separados, consultar al docente)
+\authorsaffiliations{Universidad Autónoma de Guadalajara}
+% Manera oficial de colocar los autores:
+%\author{Autor(a) I, Autor(a) II, Autor(a) III, Autor(a) X}
+\course{Pruebas, Validación y Verificación de Software}
+\professor{Maria Guadalupe Torres Godoy}
+\duedate{\today}
+\begin{document}
+    \maketitle
+
+
+    % Índices
+    \pagenumbering{roman}
+    % Contenido
+    \renewcommand\contentsname{\largeÍndice}
+    \tableofcontents
+    \setcounter{tocdepth}{2}
+    \clearpage
+    % Figuras
+    \renewcommand{\listfigurename}{\largeÍndice de fíguras}
+    \listoffigures
+    \clearpage
+    % Tablas
+    \renewcommand{\listtablename}{\largeÍndice de tablas}
+    \listoftables
+    \clearpage
+
+    % Cuerpo
+    \pagenumbering{arabic}
+
+    \section{\large Comparación entre ISTQB y libro de Pressman}
+
+    El capítulo 2 habla sobre las pruebas durante el ciclo de vida de desarrollo del software; especificando los niveles de pruebas, los tipos de pruebas, y parte del testing que se hace en la etapa de mantenimiento, mientras que el capítulo 3 habla sobre las pruebas estáticas y el proceso que llevan.
+
+    El capítulo 15 del libro de Pressman habla sobre las pruebas estáticas, cómo se lleva el proceso, hace referencia a los tipos de revisiones y a métricas.
+
+    Ambas son lecturas que se complementan muy bien entre ellas, ya que ambas describen los diferentes tipos de pruebas estáticas, las ventajas, y cómo se llevan a cabo, sin embargo, cabe resaltar que el libro de Pressman entra en mayor detalle hacia los procesos, los tipos y las métricas.
+
+    \section{Dudas respecto a la lectura}
+
+    En el libro de Pressman mencionan métricas y análisis de estas métricas donde por ejemplo, se da a conocer la densidad del error. Mis preguntas son: 
+    \begin{enumerate}
+        \item ¿Esto sirve para todos los equipos?
+        \item ¿Esto se aplica incluso en equipos nuevos?
+        \item ¿Qué pasa si el equipo1 cambia constantemente de miembros?
+        \item ¿Qué pasa si solo cambia 1 o pocos miembros del equipo1, se mantiene igual las métricas?
+    \end{enumerate}
+    
+
+\end{document}
